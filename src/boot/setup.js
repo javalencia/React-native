@@ -3,9 +3,9 @@ import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 import React, { Component } from "react";
 import { StyleProvider } from "native-base";
-import Inicio from "../Inicio";
 import getTheme from "../theme/components";
 import variables from "../theme/variables/commonColor";
+import AppNavigation from "../navigation/AppNavigation";
 export default class Setup extends Component {
   constructor() {
     super();
@@ -40,7 +40,7 @@ export default class Setup extends Component {
     }
     return (
       <StyleProvider style={getTheme(variables)}>
-        <Inicio />
+        <AppNavigation />
       </StyleProvider>
     );
   }
